@@ -25,21 +25,26 @@ p {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-  .hero-text {
-    padding-right: 1rem;
-  }
-  .hero-text :hover {
-    text-decoration: underline;
-  }
-}
 .click-here {
   text-decoration: none;
   color: white;
+  width: 40%;
 }
 
 .text-sm {
   font-weight: 100;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-text {
+    padding-right: 1rem;
+  }
+  .hero a:hover {
+    text-decoration: underline;
+  }
+  .click-here {
+    width: 4rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
