@@ -166,8 +166,8 @@ p {
 }
 .number {
   background-color: #ffffff;
-  height: 24px;
-  width: 24px;
+  height: 34px;
+  width: 34px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -187,9 +187,21 @@ p {
 
 .absolute-number {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: -10px;
+  left: 0px;
   z-index: 20;
+}
+
+.absolute-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+  filter: invert(100%) brightness(1000%);
 }
 
 /*# sourceMappingURL=style.css.map */
