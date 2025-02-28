@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="hero">
@@ -97,7 +98,7 @@
     <!-- End Swiper -->
     <!-- section cards -->
     <section class="cards-section">
-      <div class="card">
+      <div class="card" data-aos="fade-in">
         <div class="relative-img">
           <img
             class="card-img"
@@ -123,7 +124,7 @@
         </p>
       </div>
 
-      <div class="card">
+      <div class="card" data-aos="fade-in">
         <div class="relative-img">
           <img
             class="card-img"
@@ -148,7 +149,7 @@
         </p>
       </div>
 
-      <div class="card">
+      <div class="card" data-aos="fade-in">
         <div class="relative-img">
           <img
             class="card-img"
@@ -174,7 +175,7 @@
         </p>
       </div>
 
-      <div class="card">
+      <div class="card" data-aos="fade-in">
         <div class="relative-img">
           <img
             class="card-img"
@@ -225,6 +226,10 @@
           el: ".swiper-scrollbar",
         },
       });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
