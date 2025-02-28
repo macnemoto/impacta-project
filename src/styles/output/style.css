@@ -139,7 +139,7 @@ p {
 }
 
 .card-img {
-  width: 19rem;
+  width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 0.25rem;
@@ -164,6 +164,13 @@ p {
 
 .card-text-bold {
   font-weight: 600;
+}
+
+.absolute-number {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
 }
 
 /*# sourceMappingURL=style.css.map */
