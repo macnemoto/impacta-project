@@ -2,6 +2,14 @@ $red: #e2001a; // Red
 $blue: #001c3a; // Blue
 $white: #ffffff; // White
 $card-partners: #e51a31; // Card Partners
+
+.green {
+  background-color: green;
+  }
+
+.yellow {
+  background-color: yellow;
+}
 :root {
   font-family: "Outfit", serif;
   font-optical-sizing: auto;
@@ -330,6 +338,7 @@ p {
   text-align: center;
   background-color: $red;
   width: 100%;
+  margin-bottom: 1px;
 }
 h3 {
   margin: 0;
@@ -337,21 +346,21 @@ h3 {
   font-weight: 500;
 }
 .card-partners {
-margin: 0 auto;
-display: grid;
-justify-items: center;
-gap: 10px;
-max-width: 19rem; 
-grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  max-width: 19rem;
+  grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+  width: 100%;
 }
-@media screen and (min-width: 768px) {	
+@media screen and (min-width: 768px) {
   .card-partners {
     max-width: 42rem;
-    gap: 17px;
+    gap: 29px;
   }
 }
-@media screen and (min-width: 1024px) {	
+@media screen and (min-width: 1024px) {
   .card-partners {
     max-width: 56rem;
     gap: 20px;
@@ -364,9 +373,105 @@ width: 100%;
   background: $card-partners;
   border-radius: 0.25rem;
 }
+@media screen and (min-width: 768px) {
+  .partner-img {
+    margin: 1rem;
+  }
+}
 
-// @media screen and (min-width: 1024px) {
-//   .double-width {
-//     grid-column: span 2;
-//   }
-// }
+.form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $red;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $red;
+  margin: 1rem;
+  border-radius: 0.25rem;
+}
+
+.form-title {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.form-input {
+  width: 90%;
+  margin: 0.5rem 0;
+  border-radius: 0.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  color: $red;
+  font-weight: 600;
+}
+.form-input::placeholder {
+  color: $red;
+}
+
+@media screen and (min-width: 768px) {
+  .form-section-1 {
+    display: flex;
+    gap: 0.5rem;
+  }
+}
+.form-textarea {
+  width: 90%;
+  color: $red;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  font-weight: 600;
+  border-radius: 0.25rem;
+}
+.form-textarea::placeholder {
+  color: $red;
+}
+
+.form-text-1 {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+.form-title-2 {
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-top: 1rem;
+}
+.form-title-3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.form-radio {
+  display: flex;
+}
+.form-radio-input {
+  width: 16.666667%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.form-radio-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  width: 83.333333%;
+}
+.form-checkbox {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.w-3-6 {
+  width: 50%;
+}
+
+.form-checkbox-input {
+  display: flex;
+}
