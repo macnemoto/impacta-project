@@ -311,7 +311,6 @@ p {
 }
 .section-img-end {
   background-color: #e2001a;
-  height: 40rem;
   width: 100%;
 }
 
@@ -333,25 +332,43 @@ p {
   justify-content: center;
   text-align: center;
   background-color: #e2001a;
-  height: 10rem;
   width: 100%;
 }
 
 h3 {
   margin: 0;
   margin-bottom: 1rem;
+  font-weight: 500;
 }
 
 .card-partners {
-  background: #e2001a;
-  height: 50rem;
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  max-width: 19rem;
+  grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+  width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .card-partners {
+    max-width: 42rem;
+    gap: 17px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card-partners {
+    max-width: 56rem;
+    gap: 20px;
+  }
+}
 .partner-img {
   width: 5rem;
   height: 5rem;
   padding: 2rem;
   background: #e51a31;
+  border-radius: 0.25rem;
 }
 
 /*# sourceMappingURL=style.css.map */
