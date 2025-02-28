@@ -311,7 +311,7 @@ p {
 }
 .section-img-end {
   background-color: #e2001a;
-  height: 10rem;
+  height: 40rem;
   width: 100%;
 }
 
@@ -326,6 +326,32 @@ p {
   .section-img-end {
     height: 20rem;
   }
+}
+.partners-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #e2001a;
+  height: 10rem;
+  width: 100%;
+}
+
+h3 {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.card-partners {
+  background: #e2001a;
+  height: 50rem;
+}
+
+.partner-img {
+  width: 5rem;
+  height: 5rem;
+  padding: 2rem;
+  background: #e51a31;
 }
 
 /*# sourceMappingURL=style.css.map */

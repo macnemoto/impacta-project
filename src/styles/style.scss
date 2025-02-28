@@ -1,7 +1,7 @@
 $red: #e2001a; // Red
 $blue: #001c3a; // Blue
 $white: #ffffff; // White
-
+$card-partners: #e51a31; // Card Partners
 :root {
   font-family: "Outfit", serif;
   font-optical-sizing: auto;
@@ -141,7 +141,7 @@ p {
   }
   @media screen and (min-width: 1024px) {
     .cards-section {
-        margin-bottom: 20rem;
+      margin-bottom: 20rem;
     }
   }
 }
@@ -305,7 +305,7 @@ p {
 }
 .section-img-end {
   background-color: $red;
-  height: 10rem;
+  height: 40rem;
   width: 100%;
 }
 .absolute-img-end {
@@ -323,4 +323,26 @@ p {
     height: 20rem;
   }
 }
-
+.partners-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: $red;
+  height: 10rem;
+  width: 100%;
+}
+h3 {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.card-partners {
+  background: $red;
+  height: 50rem;
+}
+.partner-img {
+  width: 5rem;
+  height: 5rem;
+  padding: 2rem;
+  background: $card-partners;
+}
