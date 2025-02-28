@@ -29,22 +29,57 @@ p {
 }
 
 .click-here {
-    text-decoration: none;
-    color: white;
-    width: 40%;
+  text-decoration: none;
+  color: white;
+  width: 40%;
 }
 .text-sm {
-    font-weight: 100;
+  font-weight: 100;
 }
 
-@media screen and (min-width: 768px) {
-  .hero-text {
-    padding-right: 1rem;
-  }
-  .hero a:hover {
-    text-decoration: underline;
-  }
-  .click-here {
-    width: 4rem;
-  }
+.logo {
+  width: 8rem;
+  height: auto;
 }
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  align-items: center;
+  padding: 0.5rem;
+}
+.navbar-links ul {
+  display: none;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.navbar-links ul li {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.navbar-links ul li a {
+  text-decoration: none;
+  color: $red;
+}
+.navbar-links ul li a:hover {
+    text-decoration: underline
+  }
+
+  @media screen and (min-width: 768px) {
+    .navbar-links ul {
+        display: flex;
+    }
+    .hero-text {
+      padding-right: 1rem;
+    }
+    .hero a:hover {
+      text-decoration: underline;
+    }
+    .click-here {
+      width: 4rem;
+    }
+  }
