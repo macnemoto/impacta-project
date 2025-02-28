@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="hero">
@@ -60,6 +61,8 @@
     <!-- Swiper -->
     <!-- Slider main container -->
     <div class="swiper relative">
+      <div class="absolute-hero"></div>
+      <div class="absolute-hero-2"></div>
       <h1 class="absolute text-size">
         A veces, <br />
         somos<br />
@@ -95,7 +98,7 @@
     <!-- End Swiper -->
     <!-- section cards -->
     <section class="cards-section">
-      <div class="card">
+      <div class="card" data-aos="fade-in">
         <div class="relative-img">
           <img
             class="card-img"
@@ -105,7 +108,12 @@
           />
           <!-- <img src="/src/assets/img/icons/salud-mental.svg" alt="" srcset=""> -->
           <div class="number absolute-number">1</div>
-          <img class="absolute-img" src="/src/assets/img/icons/salud-mental.svg" alt="" srcset="">
+          <img
+            class="absolute-img"
+            src="/src/assets/img/icons/salud-mental.svg"
+            alt=""
+            srcset=""
+          />
         </div>
         <h2>CREATIVIDAD SIN LÍMITES PARA IMPULSAR TU MARCA</h2>
         <p class="card-text">
@@ -116,7 +124,7 @@
         </p>
       </div>
 
-      <div class="card">
+      <div class="card" data-aos="fade-in">
         <div class="relative-img">
           <img
             class="card-img"
@@ -126,7 +134,12 @@
           />
           <!-- <img src="/src/assets/img/icons/salud-mental.svg" alt="" srcset=""> -->
           <div class="number absolute-number">2</div>
-          <img class="absolute-img" src="/src/assets/img/icons/esperma.svg" alt="" srcset="">
+          <img
+            class="absolute-img"
+            src="/src/assets/img/icons/esperma.svg"
+            alt=""
+            srcset=""
+          />
         </div>
         <h2>AGILIDAD Y EFICIENCIA EN CADA PROYECTO</h2>
         <p class="card-text">
@@ -136,7 +149,7 @@
         </p>
       </div>
 
-      <div class="card">
+      <div class="card" data-aos="fade-in">
         <div class="relative-img">
           <img
             class="card-img"
@@ -146,7 +159,12 @@
           />
           <!-- <img src="/src/assets/img/icons/salud-mental.svg" alt="" srcset=""> -->
           <div class="number absolute-number">3</div>
-          <img class="absolute-img" src="/src/assets/img/icons/chincheta.svg" alt="" srcset="">
+          <img
+            class="absolute-img"
+            src="/src/assets/img/icons/chincheta.svg"
+            alt=""
+            srcset=""
+          />
         </div>
         <h2>TECNOLOGÍA PARA RESULTADOS ÓPTIMOS</h2>
         <p class="card-text">
@@ -156,8 +174,7 @@
           para alcanzar y superar tus objetivos.
         </p>
       </div>
-
-      <div class="card">
+      <div class="card" data-aos="fade-in">
         <div class="relative-img">
           <img
             class="card-img"
@@ -167,7 +184,12 @@
           />
           <!-- <img src="/src/assets/img/icons/salud-mental.svg" alt="" srcset=""> -->
           <div class="number absolute-number">4</div>
-          <img class="absolute-img" src="/src/assets/img/icons/jarro-de-cerveza.svg" alt="" srcset="">
+          <img
+            class="absolute-img"
+            src="/src/assets/img/icons/jarro-de-cerveza.svg"
+            alt=""
+            srcset=""
+          />
         </div>
         <h2>EQUIPO DE EXPERTOS APASIONADOS Y DEDICADOS</h2>
         <p class="card-text">
@@ -179,6 +201,12 @@
         </p>
       </div>
     </section>
+    <!-- seciton img -->
+    <div class="section-img">
+      <h4 class="section-img-text">VENDEMOS HUMO CON MUCHA PASIÓN</h4>
+     <img class="img-man" src="/src/assets/img/icons/impactacom_Waiter_preparing_a_cocktail_from_which_a_lot_of_smok_39cc6042-3b3e-4264-91e6-3ddbb9f91152.png" alt="img-man" srcset="">
+    </div>
+     <!-- end seciton img -->
     <!-- End section cards -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
@@ -203,6 +231,10 @@
           el: ".swiper-scrollbar",
         },
       });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
