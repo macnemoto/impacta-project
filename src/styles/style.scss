@@ -207,3 +207,27 @@ p {
     object-fit: cover;
     filter: invert(100%) brightness(1000%);
   }
+
+  .absolute-hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    z-index: 10;
+    background-color: #e2001a;
+    background: linear-gradient(to right, rgba(256, 0, 26, 0.8), rgba(256, 0, 26, 0.0));
+  }
+
+  @media screen and (min-width: 768px) {
+    .absolute-hero {
+      width: 50%;
+    }
+  }
+  
+  @media screen {
+    .absolute-hero {
+      width: 30%;
+    }
+  }
+
