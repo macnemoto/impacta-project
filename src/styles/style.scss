@@ -113,12 +113,21 @@ p {
     height: 100vh;
     background-color: white;
     color: $blue;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    .cards-section {
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+    }
   }
   .card {
-  background: #e2001a;
+//   background: #e2001a;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 1rem;
@@ -135,6 +144,19 @@ p {
     height: auto;
     object-fit: cover;
     border-radius: 0.25rem;
+    width: 100%;
+    max-height: 252px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .card-img {
+      min-width: 353px;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .card-img {
+      min-width: 27rem;
+    }
   }
   
   .number {
