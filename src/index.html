@@ -57,55 +57,87 @@
       </div>
     </div>
     <!-- End Navbar -->
-     <!-- Swiper -->
-      <!-- Slider main container -->
-<div class="swiper relative">
-  <h1 class="absolute text-size">A veces, <br>
-    somos<br>
-    gente<br>
-    normal</h1>
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper ">
-    <!-- Slides -->
-    <div class="swiper-slide"><img src="/src/assets/img/front/edit-1.webp" alt="" srcset=""></div>
-    <div class="swiper-slide"><img src="/src/assets/img/front/edit-2.webp" alt="" srcset=""></div>
-    <div class="swiper-slide"><img src="/src/assets/img/front/edit-3.webp" alt="" srcset=""></div>
-    <div class="swiper-slide"><img src="/src/assets/img/front/edit-4.webp" alt="" srcset=""></div>
-  </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
+    <!-- Swiper -->
+    <!-- Slider main container -->
+    <div class="swiper relative">
+      <h1 class="absolute text-size">
+        A veces, <br />
+        somos<br />
+        gente<br />
+        normal
+      </h1>
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="/src/assets/img/front/edit-1.webp" alt="" srcset="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/src/assets/img/front/edit-2.webp" alt="" srcset="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/src/assets/img/front/edit-3.webp" alt="" srcset="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/src/assets/img/front/edit-4.webp" alt="" srcset="" />
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
 
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
 
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
-</div>
-      <!-- End Swiper -->
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+    <!-- End Swiper -->
+    <!-- section cards -->
+    <section class="cards-section">
+      <div class="card">
+        <img
+          class="card-img"
+          src="/src/assets/img/icons/digital-brain-with-neon-lights-representing-fusion-neuroscience-advanced-technology.jpg"
+          alt=""
+          srcset=""
+        />
+        <!-- <img src="/src/assets/img/icons/salud-mental.svg" alt="" srcset=""> -->
+        <div class="number">1</div>
+        <h2>
+          CREATIVIDAD SIN LÍMITES
+          PARA IMPULSAR TU MARCA
+        </h2>
+        <p class="card-text">
+          Transformamos ideas en <samp class="card-text-bold">experiencias inolvidables</samp>, creando campañas
+          que capturan la esencia de tu marca y resuenan profundamente con tu
+          audiencia.
+        </p>
+      </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-      const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
     </script>
   </body>
 </html>
