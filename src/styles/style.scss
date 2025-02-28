@@ -262,7 +262,6 @@ p {
   height: 10rem;
   width: 100%;
   margin-top: 10rem;
-  margin-bottom: 10rem;
 }
 .img-man {
   width: auto;
@@ -304,3 +303,24 @@ p {
     padding-bottom: 2rem;
   }
 }
+.section-img-end {
+  background-color: $red;
+  height: 10rem;
+  width: 100%;
+}
+.absolute-img-end {
+  background-color: $white;
+  height: 10rem;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+@media screen and (min-width: 1024px) {
+  .section-img-end {
+    height: 20rem;
+  }
+}
+
