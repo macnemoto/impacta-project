@@ -319,7 +319,7 @@ p {
   background-color: #ffffff;
   height: 10rem;
   width: 100%;
-  background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to bottom, rgb(255, 255, 255) 0.1%, rgba(255, 255, 255, 0) 100%);
 }
 
 @media screen and (min-width: 1024px) {
