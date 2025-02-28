@@ -1,5 +1,45 @@
+:root {
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
 body {
+  background-color: #131314;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
   background-color: #e2001a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-text {
+    padding-right: 1rem;
+  }
+  .hero-text :hover {
+    text-decoration: underline;
+  }
+}
+.click-here {
+  text-decoration: none;
+  color: white;
+}
+
+.text-sm {
+  font-weight: 100;
 }
 
 /*# sourceMappingURL=style.css.map */
