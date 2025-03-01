@@ -73,16 +73,24 @@
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-          <img src="/src/assets/img/front/edit-1.webp" alt="" srcset="" />
+          <img
+            src="/src/assets/img/front/edit-1.webp"
+            alt="monster"
+            srcset=""
+          />
         </div>
         <div class="swiper-slide">
-          <img src="/src/assets/img/front/edit-2.webp" alt="" srcset="" />
+          <img
+            src="/src/assets/img/front/edit-2.webp"
+            alt="dinosaur"
+            srcset=""
+          />
         </div>
         <div class="swiper-slide">
-          <img src="/src/assets/img/front/edit-3.webp" alt="" srcset="" />
+          <img src="/src/assets/img/front/edit-3.webp" alt="card" srcset="" />
         </div>
         <div class="swiper-slide">
-          <img src="/src/assets/img/front/edit-4.webp" alt="" srcset="" />
+          <img src="/src/assets/img/front/edit-4.webp" alt="shark" srcset="" />
         </div>
       </div>
       <!-- If we need pagination -->
@@ -97,7 +105,7 @@
     </div>
     <!-- End Swiper -->
     <!-- section cards -->
-    <section class="cards-section">
+    <section class="cards-section container">
       <div class="card" data-aos="fade-in">
         <div class="relative-img">
           <img
@@ -106,7 +114,7 @@
             alt=""
             srcset=""
           />
-          <!-- <img src="/src/assets/img/icons/salud-mental.svg" alt="" srcset=""> -->
+
           <div class="number absolute-number">1</div>
           <img
             class="absolute-img"
@@ -132,7 +140,7 @@
             alt=""
             srcset=""
           />
-          <!-- <img src="/src/assets/img/icons/salud-mental.svg" alt="" srcset=""> -->
+
           <div class="number absolute-number">2</div>
           <img
             class="absolute-img"
@@ -157,7 +165,7 @@
             alt="beautiful cyber woman"
             srcset=""
           />
-          <!-- <img src="/src/assets/img/icons/salud-mental.svg" alt="" srcset=""> -->
+
           <div class="number absolute-number">3</div>
           <img
             class="absolute-img"
@@ -182,7 +190,7 @@
             alt="powerful"
             srcset=""
           />
-          <!-- <img src="/src/assets/img/icons/salud-mental.svg" alt="" srcset=""> -->
+
           <div class="number absolute-number">4</div>
           <img
             class="absolute-img"
@@ -271,14 +279,14 @@
           srcset=""
         />
         <img
-          class="partner-img"
+          class="partner-img double-width"
           data-aos="zoom-out-down"
           src="/src/assets/img/logos/Recurso 8.svg"
           alt="alcampo"
           srcset=""
         />
         <img
-          class="partner-img"
+          class="partner-img double-width"
           data-aos="zoom-out-down"
           src="/src/assets/img/logos/Recurso 9.svg"
           alt="kpmg"
@@ -300,6 +308,98 @@
         />
       </div>
     </section>
+    <!-- End section partners -->
+    <!-- form -->
+    <section class="form-section">
+      <div class="container">
+        <h3 class="form-title margin-left">ENVIANOS TU MENSAGE</h3>
+        <form class="form-container" action="">
+          <div class="yellow w-3-6">
+            <section class="form-section-1">
+              <div>
+                <input
+                  class="form-input"
+                  type="text"
+                  placeholder="Nombre"
+                  name="name"
+                />
+                <input
+                  class="form-input"
+                  type="email"
+                  placeholder="Email"
+                  name="email"
+                />
+              </div>
+              <div>
+                <input
+                  class="form-input"
+                  type="text"
+                  placeholder="Telefono"
+                  name="phone"
+                />
+                <input
+                  class="form-input"
+                  type="text"
+                  placeholder="Planeta de nacimiento"
+                  name="planet"
+                />
+              </div>
+            </section>
+            <textarea
+              class="form-textarea"
+              name="message"
+              placeholder="Mensaje"
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+            <p class="form-text-1">
+              Sus datos serán tratados por IMPACTA para la atención de las
+              consultas o solicitudes de información realizadas. Puede ejercer
+              sus derechos conforme a lo dispuesto en la Política de Privacidad.
+              Más información aquí.
+            </p>
+          </div>
+          <div class="green w-3-6">
+            <h3 class="form-title-2">
+              SELECCIONA SOLO <span class="form-title-3">UN RESULTADO</span>
+            </h3>
+            <div class="form-radio">
+              <div class="form-radio-input">
+                <input type="radio" name="result" id="result1" />
+                <input type="radio" name="result" id="result2" />
+                <input type="radio" name="result" id="result3" />
+                <input type="radio" name="result" id="result4" />
+              </div>
+              <div class="form-radio-label">
+                <label for="result1">Quiero ser feliz</label>
+                <label for="result2">Quiero ser rico</label>
+                <label for="result3">Quiero ser un avion</label>
+                <label for="result4">Quiero dormir todo el dia</label>
+              </div>
+            </div>
+            <div class="form-checkbox">
+              <div class="w-3-6 form-checkbox-input">
+                <input type="checkbox" name="checkbox" id="checkbox" />
+                <p class="form-checkbox-text">
+                  He leído y acepto el
+                  <span class="form-checkbox-text-bold">aviso legal</span> y la
+                  <span class="form-checkbox-text-bold"
+                    >política de privacidad</span
+                  >
+                </p>
+              </div>
+              <div class="w-3-6">
+                <button class="form-button" type="submit">
+                  ENVIAR MENSAJE
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- End form -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       const swiper = new Swiper(".swiper", {
@@ -324,9 +424,127 @@
         },
       });
     </script>
+    <div class="hero footer-hero">
+      <p class="hero-text">
+        <span class="text-sm"> MÁS PUBLICIDAD! </span> SUBSCRÍBETE A NUESTRA
+        NEWSLETTER
+      </p>
+      <a class="click-here" href="#">Clic aquí</a>
+    </div>
+    <!-- Footer -->
+
+    <footer class="footer-color">
+      <div class="container-2 footer">
+        <div>
+          <h4 class="footer-title">Contacto y Preguntas Frecuentes</h4>
+          <ul class="footer-ul">
+            <li><a href="#">+ (34) 666 666 666</a></li>
+            <li>
+              <a href="#"
+                >FORMULARIO DE <span class="footer-a">CONTACTO</span></a
+              >
+            </li>
+            <li>
+              <a href="#"><span class="footer-a">PREGUNTAS</span> FRECUENTES</a>
+            </li>
+            <li><a href="#">LIBRO DE RECLAMACIONES</a></li>
+            <li>
+              <a href="#"
+                >CONOCE NUESTRA MANERA DE
+                <span class="footer-a">TRABAJAR</span></a
+              >
+            </li>
+          </ul>
+          <div>
+            <p class="footer-a">
+              <span class="footer-text-margin">Pago seguro</span>
+            </p>
+          </div>
+          <div class="footer-img">
+            <img
+              src="/src/assets/img/logos/Recurso 17.svg"
+              alt="visa"
+              srcset=""
+            />
+            <img
+              src="/src/assets/img/logos/Recurso 18.svg"
+              alt="mastercard"
+              srcset=""
+            />
+            <img
+              src="/src/assets/img/logos/Recurso 19.svg"
+              alt="paypal"
+              srcset=""
+            />
+            <img
+              src="/src/assets/img/logos/Recurso 20.svg"
+              alt="american-express"
+              srcset=""
+            />
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">Nosotros</h4>
+          <ul class="footer-ul">
+            <li><a href="#">CATEGORÍAS</a></li>
+            <li><a href="#">NOVEDADES</a></li>
+            <li><a href="#">OFERTAS</a></li>
+          </ul>
+
+          <h4 class="footer-title">Servicios</h4>
+        </div>
+        <div>
+          <h4 class="footer-title">Proyectos</h4>
+          <ul class="footer-ul">
+            <li><a href="#">CALIDADES</a></li>
+            <li><a href="#">REVISIONES</a></li>
+            <li><a href="#">RENOVACIÓN</a></li>
+            <li><a href="#">VENTAS</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Contacto</h4>
+          <ul class="footer-ul">
+            <li><a href="#">CONTACTO</a></li>
+          </ul>
+
+          <h4 class="footer-title margin-top">Redes</h4>
+          <div class="navbar-icons">
+            <a href="#"
+              ><img
+                src="/src/assets/img/logos/instagram-white.svg"
+                alt="instagram"
+                srcset=""
+            /></a>
+            <a href="#"
+              ><img
+                src="/src/assets/img/logos/facebook-white.svg"
+                alt="facebook"
+                srcset=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-logo-container">
+        <img
+        class="footer-logo"
+        src="/src/assets/img/logos/Recurso 14.svg"
+        alt="logo"
+        srcset=""
+      />
+      </div>
+    </footer>
+    <div class="footer-end">
+      <p>
+        <span class="footer-end-text">© IMPACTA. 2025</span>
+      </p>
+    </div>
+
+    <!-- end Footer -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+    <script src="script.js"></script>
   </body>
 </html>
