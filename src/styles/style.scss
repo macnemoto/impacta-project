@@ -583,6 +583,7 @@ h3 {
 }
 .footer-title {
   color: $red;
+  font-weight: 300;
 }
 @media screen and (min-width: 768px) {
  .margin-top {
@@ -641,4 +642,14 @@ h3 {
 ul li a:hover {
   text-decoration: underline;
 }
-
+.footer-logo-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+.footer-logo {
+  width: 10rem;
+  height: auto;
+}
