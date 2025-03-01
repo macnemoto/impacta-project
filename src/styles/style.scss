@@ -48,6 +48,8 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .click-here {
@@ -582,6 +584,11 @@ h3 {
 .footer-title {
   color: $red;
 }
+@media screen and (min-width: 768px) {
+ .margin-top {
+  margin-top: 6rem;
+ }
+}
 .footer-title a{
   margin: 5rem;
 
@@ -618,5 +625,20 @@ h3 {
 
 .margin-left {
   margin-left: 1rem;
+}
+
+.footer-end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.footer-end-text {
+  font-weight: 600;
+  color: $red;
+}
+ul li a:hover {
+  text-decoration: underline;
 }
 
