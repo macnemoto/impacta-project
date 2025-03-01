@@ -17,6 +17,11 @@ $card-partners: #e51a31; // Card Partners
   margin: 0 auto; 
 }
 }
+@media screen and (min-width: 1440px) {
+  .container-2 {
+    max-width: 1440px;
+  }
+}
 
 :root {
   font-family: "Outfit", serif;
@@ -51,7 +56,7 @@ p {
   width: 40%;
 }
 .text-sm {
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .logo {
@@ -538,4 +543,80 @@ h3 {
 .form-checkbox-text-bold {
   font-weight: 600;
   }
+
+  .footer-hero {
+    background-color: $white;
+    color: $red
+  }
+.footer-hero a {
+  color: $red;
+}
+.footer-hero a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  background-color: #001c3a;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+  }
+}
+
+
+.footer a {
+  text-decoration: none;
+  color: $white;
+  margin-bottom: 1rem;
+  font-weight: 200;
+}
+.footer-title {
+  color: $red;
+}
+.footer-title a{
+  margin: 5rem;
+
+}
+.footer-a {
+  font-weight: 600;
+  text-decoration: none;
+  color: $white;
+
+}
+.footer-p-2 {
+  font-weight: 600;
+}
+.footer-img {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.footer-img img {
+  width: 2rem;
+  height: 2rem;
+}
+.footer-color {
+  background-color: $blue;
+}
+.footer-ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-ul li {
+  margin-bottom: 1rem;
+}
+
+.margin-left {
+  margin-left: 1rem;
+}
 
