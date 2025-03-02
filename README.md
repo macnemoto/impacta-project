@@ -23,11 +23,14 @@
    ```bash
    git clone https://github.com/tuUsuario/impacta.git
 
-   2. cd impacta-project
-
-   3. npm install
-
-   4. ir a la carpeta src y darle doble click a index.html
-
+2. Instala las dependencias:
+    ```bash
+    npm install
+3. Compila los estilos SCSS (solo primera vez o tras modificar estilos):
+    ```bash
+    npm run build
+4. Inicia el servidor de desarrollo con recarga automática:
+    ```bash
+    npm start
 
 
